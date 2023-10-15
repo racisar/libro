@@ -13,7 +13,6 @@ body {
     perspective: 1000px;
     position: relative;
     overflow: hidden;
-    transform-style: preserve-3d;
 }
 
 .cover {
@@ -32,21 +31,6 @@ body {
     transform-origin: left center;
     transform-style: preserve-3d;
     transition: transform 0.5s;
-}
-
-.page.left {
-    left: 0;
-    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5);
-    background: white;
-    clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
-}
-
-.page.right {
-    right: 0;
-    transform-origin: right center;
-    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5);
-    background: white;
-    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .content {
