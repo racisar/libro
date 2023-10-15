@@ -4,9 +4,9 @@ let currentPage = 1; // Comenzamos en la página 1
 
 function showPage(pageIndex) {
     if (pageIndex >= 1 && pageIndex <= pages.length) {
-        pages[currentPage].style.transform = 'rotateY(0deg)';
+        pages[currentPage - 1].style.transform = 'rotateY(0deg)';
         currentPage = pageIndex;
-        pages[currentPage].style.transform = 'rotateY(0deg)';
+        pages[currentPage - 1].style.transform = 'rotateY(0deg)';
     }
 }
 
